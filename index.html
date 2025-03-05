@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Phonebook</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body style="margin: 0;">
+  <nav class="navbar navbar-light d-flex justify-content-end" style="padding: 0; margin: 0;">
+    <span class="navbar-brand">
+      <img src="phone-book-14.png" height="45" class="d-inline-block align-top" alt="" style="margin-right: 3px;">
+      Phonebook
+    </span>
+  </nav>
+    
+
+
+
+  
+
+  
+  <div id="container">
+    <div class="text_box search-section">
+      <form autocomplete="off">
+        <h5 class="section-title">Search Contacts</h5>
+        <div class="autocomplete">
+          <input id="myInput" type="text" placeholder="Enter name or number...">
+        </div>
+        <div class="button-group">
+          <input type="submit" value="Cancel" class="btn btn-secondary">
+        </div>
+      </form>
+    </div>
+    
+    <div class="text_box contacts-section">
+      <h5 class="section-title">Contacts List</h5>
+      <div id="info" class="contacts-list"></div>
+    </div>
+  </div>
+
+  <div class="action-section">
+    <div class="input-group">
+      <input type="text" placeholder="Name, Number" id="contact_input">
+      <button class="btn btn-success" id="add">➕ Add Contact</button>
+    </div>
+    
+    <div class="input-group">
+      <input type="text" placeholder="Number to delete" id="delete_input">
+      <button class="btn btn-danger" id="del">🗑️ Delete Contact</button>
+    </div>
+  </div>
+
+  <template id="contact-template">
+    <div class="contact-card">
+      <div class="avatar">
+        <img src="./person.png" alt="Profile">
+      </div>
+      <div class="contact-info">
+        <span class="contact-name">Eric George</span>
+        <span class="contact-number">+1 234 567 890</span>
+      </div>
+    </div>
+  </template>
+</body>
+</html>

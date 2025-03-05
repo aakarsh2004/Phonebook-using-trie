@@ -1,0 +1,153 @@
+:root {
+    --primary: #2962ff;
+    --success: #00c853;
+    --danger: #d50000;
+    --background: #f8f9fa;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 12px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--background);
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, #2962ff, #6200ea);
+    padding: 1rem 2rem;
+  }
+  
+  .navbar img {
+    filter: brightness(0) invert(1);
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-brand {
+    color: white!important;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .text_box {
+    padding: 2rem;
+    background: white;
+    border-radius: var(--radius);
+  }
+  
+  .search-section {
+    border-right: 2px solid #eee;
+  }
+  
+  .section-title {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin: 1.5rem auto;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background: var(--success);
+  }
+  
+  .btn-danger {
+    background: var(--danger);
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    margin: 0.8rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    object-fit: cover;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-name {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .contact-number {
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 768px) {
+    #container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+    
+    .search-section {
+      border-right: none;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 2rem;
+    }
+    
+    .input-group {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
